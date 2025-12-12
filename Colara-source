@@ -39,7 +39,7 @@ local Window = Rayfield:CreateWindow({
 
 local Tab = Window:CreateTab("Home", "codesandbox")
 
-local Paragraph = Tab:CreateParagraph({Title = "Current Script Num", Content = "Current: 84 Scripts More Coming Soon! *I will reach 100+ Fe Script next version*"})
+local Paragraph = Tab:CreateParagraph({Title = "Current Script Num", Content = "Current: 91+ Scripts More Coming Soon! *I will reach 100+ Fe Script next version*"})
 
 local Label = Tab:CreateLabel("Some scripts are patched some is not universal *srry*", "a-large-small")
 
@@ -662,5 +662,54 @@ local Button = Tab:CreateButton({
    Name = "Fe Sonic (R15)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Azizanzz0/FE-R15-Sonic-X-Super/refs/heads/main/Protected%20SonicXSuper.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Project Void (R6) ",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/PU6VWuJk/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Faker (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/zyxsYYd9"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "NotGui v2",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/Cz3xbk8h"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe C00lkidd Clan V1 Gui (Might Not Be Fe On Other Games)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/cfsmi2/c00lguiv1/refs/heads/main/Main.lua", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Anim GUI V2.5",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Emerson2-creator/Scripts-Roblox/refs/heads/main/ScriptR6/AnimGuiV2.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Troll Animations (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/alifSTARZ/HERMAN-KONTOL-ANIMATION/refs/heads/main/Animation%20script%20by%20xploit%20force"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Touch Fling",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/LgZwZ7ZB",true))()
    end,
 })
