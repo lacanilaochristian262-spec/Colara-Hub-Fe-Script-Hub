@@ -39,9 +39,10 @@ local Window = Rayfield:CreateWindow({
 
 local Tab = Window:CreateTab("Home", "codesandbox")
 
-local Paragraph = Tab:CreateParagraph({Title = "Current Script Num", Content = "Current: 91+ Scripts More Coming Soon! *I will reach 100+ Fe Script next version*"})
+local Paragraph = Tab:CreateParagraph({Title = "Current Script Num", Content = "Current: 101+ Scripts More Coming Soon! *I will reach More Fe Script next version :)*"})
 
 local Label = Tab:CreateLabel("Some scripts are patched some is not universal *srry*", "a-large-small")
+local Label = Tab:CreateLabel("Credits To The Owners Since I'm Not Who Maked These Scripts", "a-large-small")
 
 local Tab = Window:CreateTab("Universial/FE", "eye")
 
@@ -760,5 +761,26 @@ local Button = Tab:CreateButton({
    Name = "Fe Luffy Gear 2 (R15)",
    Callback = function()
    loadstring(game:HttpGet("https://pastebin.com/raw/4a4aYSBv"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Star Glitcher (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/bvPbLBrT"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Sharingan (R6/R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/bidQM5Bz"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Flowers Anim Pack (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/D8sV0RC6"))()
    end,
 })
