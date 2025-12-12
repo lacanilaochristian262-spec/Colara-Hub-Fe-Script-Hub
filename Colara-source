@@ -784,3 +784,33 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("https://pastebin.com/raw/D8sV0RC6"))()
    end,
 })
+
+local Button = Tab:CreateButton({
+   Name = "Fe Gojo (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/EHW6uehz"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Wally west (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/VDxFA1Ze"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Settings", "settings")
+
+local Button = Tab:CreateButton({
+   Name = "Destroy UI",
+   Callback = function()
+   Rayfield:Destroy()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "UNC Test",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/1D51kveq/raw"))()
+   end,
+})
