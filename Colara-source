@@ -1,0 +1,666 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Colara Hub | Fe Script Hub | BETA",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Colara Hub | BETA",
+   LoadingSubtitle = "FE Script Hub",
+   ShowText = "FE HUB", -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local Tab = Window:CreateTab("Home", "codesandbox")
+
+local Paragraph = Tab:CreateParagraph({Title = "Current Script Num", Content = "Current: 84 Scripts More Coming Soon! *I will reach 100+ Fe Script next version*"})
+
+local Label = Tab:CreateLabel("Some scripts are patched some is not universal *srry*", "a-large-small")
+
+local Tab = Window:CreateTab("Universial/FE", "eye")
+
+local Button = Tab:CreateButton({
+   Name = "Fe Trolling GUI",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe r15/r6 dance",
+   Callback = function()
+   loadstring(game:HttpGet("https://binfor.do.am/Scripts/energize.html"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Invisible (only r15)",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Freaky Jerk Off (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Racing Car (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/UqDEIOpO/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "FE Fake Lag (R6 & R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FAKE-LAG-22520"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Sus Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/cnPthPiGon/RamDRuomFirirueieiid8didj/refs/heads/main/Fe%20sus%20hub"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Freaky Duck Player (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiderScriptRB/Script-SPT/refs/heads/main/Fuck%20Player%20%40SpiderScriptRB.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Super Ring",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/cnPthPiGon/CM9/refs/heads/main/Super%20Ring%20Part%20V3%20Real%20FE%20Leak%20Finally"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Animation Pack (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Syntax hub v2",
+   Callback = function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/Memeboiyot/SyntaxRebornOfficial/main/SyntaxReborn'),true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe lag switcher",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/Protected%20-%202023-05-28T225112.055.lua.txt", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Player Orbit",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Orbit%20GUI"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Aura Flying (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-R6-Aura-flying-script-73887"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Tails Animation Pack (R15)",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Knuckles Animation Pack (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/x1eMu5jT/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Sonic Exe (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/XCtZsGhP/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Super Sonic (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Azizanzz0/FE-R15-Sonic-X-Super/refs/heads/main/Protected%20SonicXSuper.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Egor (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/A1thNnwQ/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Master Hand (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-master-hand-73639"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Gaze Animator (R6, R15)",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Gazer-Ha/Reimagined/refs/heads/main/FE%20Animation%20editor'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Combine Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikeices/script/refs/heads/main/combine.luau"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Animation Player (R6 and R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Erickzzz-Animation-Player-72955",true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Script Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikeices/script/refs/heads/main/hub.luau"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "FE TELEKINESIS Brookhaven",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-TELEKINESIS-Brookhaven-73614"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Another Fe Animation Player",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/9R9nG0km", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Flame X Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikeices/script/refs/heads/main/flame.luau"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Universal Hairy Dance (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Universal-Hairy-Dance-R6-72879"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Gras Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikeices/script/refs/heads/main/grasshub.luau"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Clovr (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/UP-Just-a-baseplate.-fe-clovr-v2-72051"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Achromatix (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikeices/script/refs/heads/main/achromatix.luau"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Super Girl (PC ONLY)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-SUPER-GIRL-V1-FOR-PC-73127"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Zero Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikeices/script/refs/heads/main/zero.luau"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Universial Emote (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Emotes-Universal-Emotes-Script-61891"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Slicer Fe V6 (Unknown body type)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Ahma174/Slicer/refs/heads/main/Slicer%20Fe%20V6"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Flinger Script",
+   Callback = function()
+   loadstring(game:HttpGet("https://rscripts.net/raw/fe-flinger-gui-works-anywhere_1756291955889_SwfaGHMWsT.txt",true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Trolling Player Animations (unknown body type)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/3LD4D0/FE-TROLLING-PLAYER-R6-R15/6eff8792afed57458d5114478b453a6f6bce5799/Fe%20trolling%20Player%20R6%20AND%20R15"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Dash (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rscripts.net/raw/fe-dash-script_1751990037091_xRxB6haarF.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe StrawberryCMD (Doesn't Work on all games)",
+   Callback = function()
+   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/C-Dr1ve/Strawberry/refs/heads/main/Current_Version.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe SCP-096 (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/YsJgITXR/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Saitama (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/5K1jpZs6",true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Rizz Trip (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Rawbr10/Roblox-Scripts/refs/heads/main/0%20Graviy%20Trip%20Universal"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Another Emote Player (R15)",
+   Callback = function()
+   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Swamp Monster Hub (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/2tC7nRAK/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Part Tornado GUI",
+   Callback = function()
+   pcall(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hm5650/TornadoGuiIg/refs/heads/main/Srrylolitsobfuscatednomorestealing", true))()
+end)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Hamster Ball V2",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/KaterHub-Inc/scripts/refs/heads/main/unofficial-Projects/FEHamsterBall.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe fake chat",
+   Callback = function()
+   pcall(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hm5650/FakeChat/refs/heads/main/FakeChatLol", true))()
+end)
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Another Fe Invisible script (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Invisible-script-20557"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Front Back Hug (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ExploitFin/Animations/refs/heads/main/Front%20and%20Back%20Hug%20Tool"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Animation Chopper (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Gaze-stuff/refs/heads/main/I%20cant%20script%20theres%20no%20loadstring"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Tiger Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/balintTheDevX/Tiger-X-V3/main/Tiger%20X%20V3.5%20Fixed"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Bang People (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/SvVYqTh6"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Sus GUI (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rscripts.net/raw/sus-fe-script_1761628761303_2eJ1ZJeOzY.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Brookhaven Fe Fat Body",
+   Callback = function()
+   loadstring(game:HttpGet("https://rscripts.net/raw/brookhaven-fe-fat_1753743801272_TeHJKGxQQ9.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Freeze Player",
+   Callback = function()
+   loadstring(game:HttpGet("https://rscripts.net/raw/fe-universal-freezelock-player_1747215628539_yh1D6V0OfH.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Troll GUI (work at a pizza place)",
+   Callback = function()
+   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/blueEa1532/thechosenone/refs/heads/main/trollpizzagui"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = " Fe Universal Telekinesis",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/skibicumrocket/piss-monster/refs/heads/main/telekines.txt'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Another Fe Hub (Work)",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Scriptking12333/15Scripts-/refs/heads/main/script14%2060%2B%20Games%20Hub'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Roaring Knight (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/KwrZn2RN"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/gGB65rMr"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "QuirkyCmd (Doesn't Work on All Games)",
+   Callback = function()
+   loadstring(game:HttpGet("https://gist.github.com/someunknowndude/38cecea5be9d75cb743eac8b1eaf6758/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Draw Chat",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ocfi/_/refs/heads/main/a"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Copy Avatar",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/refs/heads/main/Copy%20Avatar'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Possessed (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/C2ixw5i9"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Ragdoll V2 (R15)",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/shakk-code/fe-ragdoll-script/refs/heads/main/script.lua', true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Cat (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/Y1MkBRn3"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Grab Npc (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/GUI-Offical/FileTest/refs/heads/main/Grab%20R6.txt", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Hacker Chat V2",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/a9iK0EH1"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Animation Hub (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Fsploit/FeAnimationHub/refs/heads/main/Hub.lua"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Invincible Fly (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/XyR6izYv"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Punch Npc (R6 For PC)",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/shakk-code/fe-punch-script/refs/heads/main/script.lua', true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Punch Npc (R6 For Mobile)",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/shakk-code/fe-punch-script/refs/heads/main/script.lua', true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Dog (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/WyqDmp0t"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Part Control V2",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/v0c0n1337/scripts/refs/heads/main/Unachored_parts_controller_v2.lua.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Seraphic Blade (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/59mJGQGe/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Grab Part (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/Da2RAkmA"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Animation GUI (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://github.com/Sinister-Scripts/Roblox-Exploits/raw/refs/heads/main/FE-Animation-GUI-R6"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Shadow The Hedgehog (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/0QSkiaHL/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Project Chaos (R15) ",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/Dehgx9cq/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Npc Controller (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/dacXGb2W"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Blackhole Ability V2",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastefy.app/PU6VWuJk/raw"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Skybox (Brookhaven)",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Skybox-Brookhaven-61921"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Roblox egor v2",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/DROID-cell-sys/ANTI-UTTP-SCRIPTT/main/EGOR%20FIXED"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Illusion (R6)",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Death Note (R6)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/EN5WhyBY"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Jk Limited Flex (R6 Camera Version)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LolnotaKid/Ui-library/main/UFWBYMEVEUXCAMV1"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Jk Limited Flex (R6 No Camera Version)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LolnotaKid/SCRIPTSBYVEUX/main/UFWboo.txt"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Fe Sonic (R15)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Azizanzz0/FE-R15-Sonic-X-Super/refs/heads/main/Protected%20SonicXSuper.txt"))()
+   end,
+})
